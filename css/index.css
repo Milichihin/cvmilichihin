@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+body {
+	max-width: 1030px;
+	margin: auto;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	display: grid;
+	grid-template-columns: 200px 1fr;
+}
+
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+img {
+	width: 50px;
+}
+.fas {
+	width: 50px;
+}
+
+/* ========= header ========== */
+
+header {
+	background-color: #FFE84B;
+	min-height: 100px;
+	display: flex;
+	flex-direction: column;
+	position: sticky;
+	top: 0;
+	height: 100vh;
+}
+
+.ava img {
+	width: 100%;
+	height: 100%;
+}
+
+nav {
+	padding-left: 30px;
+	height: 100%;
+}
+
+.name {
+	padding-left: 30px;
+	margin-top: -25px;
+}
+
+.name h1 {
+	font-size: 1.3em;
+	color: #FFE84B;
+	margin: 0;
+}
+
+.name h2 {
+	font-size: 1em;
+	margin-top: 0;
+	line-height: 0.8;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+	margin-top: 40px;
+	font-weight: bold;
+	line-height: 2;
+}
+
+.active a {
+	border-style: solid;
+	border-color: black;
+	border-width: 2.3px;
+	padding: 1px 5px 1px 5px;
+}
+
+.copy {
+	display: flex;
+	position: absolute;
+	padding-left: 30px;
+	width: 100px;
+	font-size: 0.8em;
+	justify-content: left;
+	margin: 20px 0 20px 0;
+	bottom: 0;
+}
+
+.pdflogo {
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+	display: flex;
+	height: 27px;
+	width: 88px;
+	margin-top: 70px;
+	position: absolute;
+	/*bottom: 70px;*/
+	bottom: 15%;
+
+}
+
+.pdflogo p {
+	display: inline-block;
+	height: 25px;
+	width: 50px;
+	background-color: black;
+	color: #FFE84B;
+	font-size: 0.55em;
+	margin: 0;
+	padding: 3px 5px 0 5px;
+}
+
+.pdflogo img {
+	width: 20px;
+	padding: 3px 0 0 4px;
+}
+
+#menu-toggle {
+	display: none;
+}
+
+.label-toggle {
+	display: none;
+}
+
+/* ========= about ========== */
+.about {
+	/*background-color: blue;*/
+	min-height: 80px;
+	height: 900px;
+	text-align: center;
+	text-indent: 
+}
+
+.about h1 {
+	margin: 0 0 100px 0;
+	padding-top: 10px;
+	position: sticky;
+	top: 0;
+}
+.about p {
+	padding: 10px 30% 10px 40px;
+	text-align: justify;
+}
+
+
+
+/* ========= experience ========== */
+.experience {
+	background-color: green;
+	min-height: 80px;
+}
+
+
+/* ========= education ========== */
+.education {
+	background-color: gray;
+	min-height: 80px;
+}
+
+
+/* ========= accomplishment ========== */
+.accomplishments {
+	background-color: red;
+	min-height: 80px;
+}
+
+/* ========= contact ========== */
+.contact {
+	background-color: pink;
+	min-height: 80px;
+}
+
+
+/* ========= condition of hight  ========== */
+
+@media (max-height: 600px) {
+	.copy {
+		position: relative;
+		
+	}
+	.pdflogo {
+		position: relative;
+	}
+}
+
+/* ========= mobile ========== */
+
+@media (max-width: 750px) {
+	body {
+		display: inline;
+	}
+/* ========= header ========== */
+	header {
+		flex-direction: row;
+		justify-content: space-between;
+		height: 100px;
+		width: 100%;
+	}
+
+	.pdflogo {
+		display: none;
+	}
+
+	.hamb {
+		display: block;
+	}
+
+	.ava img {
+		display: block;
+		width: 100px;
+	}
+	.copy {
+		position: fixed;
+		width: 100%;
+		bottom: 0;
+		justify-content: center;
+		background-color: #FFE84B;
+		padding: 5px 0 5px 0;
+		margin: 0;
+	}
+	.name {
+		padding: 0;
+		margin: 0;
+	}
+	.name h1 {
+		color: black;
+		margin: 15px 15px;
+		text-align: center
+	}
+	.name h2 {
+		display: none;
+	}
+	nav {
+		position: absolute;
+		left: 0;
+		/*top: 100px;*/
+		width: 100%;
+		padding: 0;
+		text-align: center;
+	}
+	ul {
+		display: none;
+		margin: 100px 0 0 0;
+		opacity: 0;
+		height: 100%;
+		/*transition: all 0.5s ease;*/
+		/*visibility: hidden;*/
+	}
+	li {
+		background-color: #c3c3c3;
+		border-top-style: solid;
+    	border-top-color: white;
+	}
+	.active a {
+		border-style: none;
+		padding: 0;
+	}
+	.active {
+		background-color: #FFE84B;
+	}
+	.hamb {
+		background-color: gray;
+		width: 100px;
+		height: 100px;
+	}
+	#menu-toggle:checked ~ ul {
+	    opacity: 1;
+	    height: 100vh;
+	    /*visibility: visible;*/
+	    display: block;
+	}
+	.label-toggle {
+		background-image: url(../img/fb.png);
+		background-size: cover;
+	    /*background: linear-gradient(to bottom, #E84545 0%, #E84545 20%, transparent 20%, transparent 40%, #E84545 40%, #E84545 60%, transparent 60%, transparent 80%, #E84545 80%, #E84545 100%); */
+	    cursor: pointer;
+	    display: block;
+	    float: right;
+	    height: 35px;
+	    margin-top: 1em;
+	    width: 35px;
+	    position: absolute;
+	    top: 10px;
+	    right: 25px;
+    }
+
+/* ========= about ========== */
+
+    .about h1 {
+		top: 60px;
+		padding: 0;
+		line-height: 0.8;
+	}
+	.about {
+		margin-top: -40px;
+	}
+}
+
+
+
