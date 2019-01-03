@@ -65,7 +65,7 @@ p {
 }
 
 .ava {
-	background-image: url("/img/portrait-1.jpg");
+	background-image: url("../img/portrait-1.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover
@@ -195,7 +195,7 @@ p {
 /* ========= about ========== */
 
 .about {
-	background-image: url("/img/piccode.jpg");
+	background-image: url("../img/piccode.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -594,7 +594,7 @@ sq-bck3 {
 	}
 	
 	.mobile-photo {
-		background-image: url("/img/portrait-1.jpg");
+		background-image: url("../img/portrait-1.jpg");
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
@@ -615,7 +615,7 @@ sq-bck3 {
 	/*}*/
 	.about {
 		background-image: none;
-		/*background-image: url("/img/portrait-1.jpg");*/
+		/*background-image: url("../img/portrait-1.jpg");*/
 		/*background-repeat: no-repeat;*/
 		/*background-size: cover;*/
 		/*background-position: center;*/
