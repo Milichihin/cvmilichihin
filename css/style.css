@@ -1,0 +1,138 @@
+/*
+
+	Author: Nemets Yury;
+	Site: www.sitehere.ru;
+
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,400,900&subset=latin,cyrillic);
+
+html, body {
+  height: 100%;
+  position: relative;
+}
+
+body {
+  font:normal 100% 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url(../images/bg-rr.jpg) #3CB8E1;
+  color:#798289;
+}
+
+* {
+	box-sizing:border-box;
+}
+
+.content {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.content:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.header,.lastBlock {
+	padding:80px 0;
+	background: url(../images/bg.png);
+	background-attachment: fixed;
+}
+
+#blockContainer {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.block {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+#b1 {
+  background: #fff;
+}
+
+#b2, #b3 {
+  width: 50%;
+}
+
+#b2 {
+  background: #7BCD8E;
+}
+
+#b3 {
+  background: #FAC870;
+}
+
+#b4 {
+  background: #f8f8f8;
+}
+
+
+
+
+/*######Стили для демо###########*/
+h1.title {
+  color:#f8f8f8;
+  font-size: 70px;
+  line-height: 80px;
+  margin:20px auto 0;
+  width: 70%;
+  text-align: center;
+}
+
+h1.title span {
+  display: block;
+  font-size: 50px;
+  line-height: 60px;
+}
+
+p.info {
+  width: 30%;
+  background: #fff;
+  text-align: center;
+  line-height: 30px;
+  color: #57565B;
+  margin:30px auto 50px;
+}
+
+/*Адаптация*/
+@media screen and (max-width: 1140px) {
+  .bullet-item span{
+    line-height: 1.5em;
+    font-size: 10.5em;
+  }
+}
+
+/*Кнопка "К статье"*/
+.backToSitehereBtn{
+  display: block;
+  width: 150px;
+  height: 150px;
+  background: #01BC78;
+  text-align: center;
+  line-height: 170px;
+  font-size: 20px;
+  border-radius: 50%;
+  color:#fff;
+  position: absolute;
+  text-decoration: none;
+  top:-40px;
+  left:-40px;
+  transform:rotate(-45deg) scale(1);
+  transition:all 0.25s linear;
+}
+
+.backToSitehereBtn:hover {
+  text-decoration: none;
+  top:-10px;
+  left:-10px;
+  transform:rotate(-45deg) scale(1.3);
+}

@@ -1,0 +1,357 @@
+#timeline * {
+	margin: 0;
+	padding: 0;
+}
+
+
+#timeline a {
+	color: #ffffcc;
+	text-decoration: none;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;
+	-ms-transition: 0.3s;
+	transition: 0.3s;
+}
+
+#timeline a:hover,
+#timeline a.selected {
+	color: black;
+}
+
+#timeline h1, h2, h4, h5, h6 {
+	text-align: center;
+	color: #ccc;
+}
+
+#dates h1, h2, h4, h5, h6 {
+	text-align: center;
+	color: #ccc;
+}
+
+h1 {
+	font-size: 18px;
+}
+
+h2 {
+	font-size: 14px;
+}
+
+.sociales {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.logo-job {
+	display: flex;
+	justify-content: center;
+	/*background-color: white;*/
+	/*height: 100%;*/
+	/*width: 100%;*/
+	align-items: center;
+	/*border-radius: 80px;*/
+	align-self: center;
+}
+
+.logo-job img {
+	/*height: 100px;*/
+	width: 100%;
+}
+
+
+#my-list li {
+	all: none;
+}
+
+.my-slider {
+	position: relative;
+}
+
+#timeline {
+	margin: 0 5% 0 5%;
+	width: 80%;
+	height: 75vh;
+	overflow: hidden;
+	position: absolute;
+	top: -300px;
+	background: url('../img/dot.gif') 4px top repeat-y;
+}
+
+@media (min-height: 760px) {
+	#timeline {
+		top: -230px;
+	}
+}
+
+#dates {
+	height: 100%;
+	overflow: hidden;
+	float: left;
+}
+
+#dates li {
+	display: flex;
+	align-items: center;
+	list-style: none;
+	width: 100px;
+	height: 16.6%;
+	font-size: 1em;
+	padding-left: 30px;
+	text-align: center;
+	justify-content: center;
+	background: url('../img/biggerdot.png') left center no-repeat;
+}
+
+#dates a {
+	/*line-height: 38px;*/
+	/*padding-bottom: 10px;*/
+}
+
+#dates .selected {
+	/*font-size: 38px;*/
+	font-weight: bolder
+}
+
+#issues {
+	width: 80%;
+	/*height: 600px;*/
+	overflow: hidden;
+	float: left;
+}
+
+#issues li {
+	width: 80%;
+	height: 550px;
+	list-style: none;
+	display: grid;
+	grid-template-columns: 2fr 0.5fr;
+	align-content: center;
+	padding-left: 10%;
+
+}
+
+#issues li h1 {
+	color: black;
+	font-size: 1em;
+	text-align: left;
+}
+
+#issues li h2 {
+	text-align: left;
+	font-weight: normal;
+	color: black;
+}
+
+#issues li p {
+	font-size: 14px;
+	margin: 10% 10% 0 5%;
+	font-weight: normal;
+	line-height: 2;
+}
+
+#next, #prev {
+	position: absolute;
+	left: 74%;
+	font-size: 70px;
+	width: 100px;
+	height: 80px;
+	background-position-x: center;
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
+#next {
+	bottom: -50px;
+	background-image: url('../img/next_v.png');
+}
+
+#prev {
+	top: 10%;
+	background-image: url('../img/prev_v.png');
+}
+
+#next.disabled,
+#prev.disabled {
+	opacity: 0.2;
+}
+/* ========= HORIZONTAL CONDITION ============ */
+
+@media (max-width: 1020px) {
+	#timeline {
+		/*height: 500px;*/
+		height: 75vh;
+		top: -200px;
+	}
+	#dates {
+		width: 20%;
+		font-size: 0.8em;
+	}
+	#dates li {
+		text-align: left;
+		justify-content: left;
+	}
+	#issues {
+		/*width: 80%;*/
+		/*height: 600px;*/
+		/*overflow: hidden;*/
+		/*float: left;*/
+	}
+	#issues li {
+		height: 450px;
+		/*grid-template-columns: 1fr;*/
+    	/*grid-template-rows: 3fr 0.5fr;*/
+		align-content: center;
+		padding-left: 10%;
+	}
+	.logo-job img {
+		height: 60px;
+		width: 60px;
+	}
+	.logo-job {
+		height: 80px;
+		width: 80px;
+	}
+	#issues li h1 {
+		color: black;
+		font-size: 1em;
+		text-align: left;
+	}
+	#issues li h2 {
+		text-align: left;
+		font-weight: normal;
+		color: black;
+	}
+	#issues li p {
+		font-size: 14px;
+		margin: 10% 10% 0 5%;
+		font-weight: normal;
+		line-height: 2;
+	}
+
+	#next,
+	#prev {
+		position: absolute;
+		left: 72%;
+		font-size: 70px;
+		width: 100px;
+		height: 80px;
+		background-position-x: center;
+		background-repeat: no-repeat;
+		text-indent: -9999px;
+		overflow: hidden;
+	}
+
+	#next {
+		bottom: 0;
+		background-image: url('../img/next_v.png');
+	}
+	#prev {
+		top: 10%;
+		background-image: url('../img/prev_v.png');
+	}
+	#next.disabled,
+	#prev.disabled {
+		opacity: 0.2;
+	}
+
+}
+
+/* ========= VERTICAL CONDITION ============ */ 
+
+/*and (min-width: 1020px) */
+@media (min-height: 1000px) {
+	#issues li {
+		display: flex;
+		flex-direction: column;
+	}
+	#issues .logo-job img {
+		position: absolute;
+		top: 60%;
+		width: 120px;
+		height: 120px;
+		margin-top: 40px;
+	}
+	#next, #prev {
+		left: 85%;
+		height: 320px;
+	}
+}
+
+@media (min-height: 1000px) and (min-width: 1020px) {
+	#issues li h1 {
+		font-size: 1.5em;
+		text-align: center;
+	}
+	#issues li h2 {
+		font-size: 1.2em;
+		text-align: center;
+	}
+	#issues li p {
+		font-size: 1.2em;
+	}
+}
+
+@media (min-height: 1000px) and (max-width: 900px)  {
+	#dates {
+		width: 100px;
+	}
+	#timeline {
+		width: 95%;
+	}
+	#next, #prev {
+		background-image: none;
+	}
+}
+
+
+@media (max-height: 500px) {
+	#timeline {
+		width: 95%;
+		height: 300px;
+		position: relative;
+		top: -50vh;
+		margin: 0;
+	}
+	#dates {
+		height: 300px;
+	}
+	#dates li {
+		background: url('../img/smallerdot.png') left 3px center no-repeat;
+		width: 60px;
+		font-size: 0.7em;
+		padding-left: 20px;
+	}
+	#issues li {
+		padding-left: 5%;
+		display: flex;
+    	flex-direction: column;
+	}
+	#issues li h1 {
+		text-align: center;
+	}
+	#issues li h2 {
+		font-size: 0.8em;
+		text-align: center;
+	}
+	#issues li p {
+		font-size: 0.8em;
+		line-height: 1.2;
+	}
+	#issues .logo-job img {
+		position: absolute;
+		bottom: 0;
+	}
+	#timeline #next {
+		background-image: none;
+	}
+	#timeline #prev {
+		background-image: none;
+	}
+}
+
+@media (max-height: 350px) {
+	#timeline {
+		top: -55vh;
+	}
+}

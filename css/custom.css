@@ -1,0 +1,117 @@
+/*
+
+	Author: Nemets Yury;
+	Site: www.sitehere.ru;
+
+*/
+/*
+h2.title::after {
+    background: none repeat scroll 0 0 #0aabe1;
+    bottom: -1px;
+    content: "";
+    height: 1px;
+    left: 50%;
+    margin-left: -25px;
+    position: absolute;
+    transition: all 0.3s ease 0s;
+    width: 50px;
+}*/
+/*
+h2.title  {
+    border-bottom: 1px solid #e1e1e1;
+    color: #0aabe1;
+    padding: 0 30px 10px;
+    position: relative;
+    font-size: 46px;
+    font-weight: 800;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}*/
+/*
+.descript:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.descLeft,.descRight {
+  width: 50%;
+  float: left;
+}
+
+ul {
+  padding:0;
+}*/
+/*
+ul, li {
+  margin: 0 0 10px;
+  list-style-type: none;
+}*/
+/*
+.description-list li {
+    font-size: 22px;
+    margin-bottom: 16px;
+}*/
+/*
+.descLeft p {
+  font-size: 22px;
+}*/
+/*
+.des-icon {
+  display: inline-block;
+  height: 40px;
+  margin-right: 3px;
+  width: 40px;
+}*/
+/*
+.description-list li .fa {
+    color: #00a7dd;
+    font-size: inherit;
+}*/
+
+h2.pfTitle {
+  font-size: 50px;
+  text-align: center;
+  color:#fff;
+}
+
+
+.what {
+  text-align: center;
+  font-size: 25px;
+  color:#fff;
+  margin-top:50px;
+}
+
+#b2,#b3,#b4 {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+.imgCart {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+h2.cartTitle {
+  text-align: center;
+  color: #52B84C;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+a.btnOrder {
+  text-align: center;
+  background: #52B84C;
+  color:#fff;
+  font-weight: 700;
+  font-size: 30px;
+  padding:10px 15px;
+  text-decoration: none;
+  border-radius: 4px;
+  border-bottom: 4px solid #47A042;
+}
