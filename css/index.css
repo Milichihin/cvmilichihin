@@ -601,20 +601,16 @@ sq-bck3 {
 		background-blend-mode: darken;
 		background-color: #00000038;
 		display: block;
-		position: fixed;
-		height: 550px;
-		top: -60px;
-		left: 200px;
-		right: 0px;
+		position: sticky;
+		height: 100vh;
+		top: 0;
+		bottom: 0;
+		/*right: 0;*/
 		z-index: -100;
 	}
-	
-	/*.topic {*/
-	/*	background-color: transparent;*/
-		/*background: linear-gradient(180deg, black, transparent);*/
-	/*}*/
 	.about {
 		background-image: none;
+		padding-bottom: 0;
 		/*background-image: url("../img/portrait-1.jpg");*/
 		/*background-repeat: no-repeat;*/
 		/*background-size: cover;*/
@@ -628,7 +624,11 @@ sq-bck3 {
 	}
 	.about-container {
 		position: relative;
-		margin: 180px 0 0 0;
+		margin: 0;
+		padding-bottom: 100px;
+	}
+	.about .topic {
+		padding: 20px 0 150px 0;
 	}
 	.about .topic h1 {
 		color: #ffe84a;
@@ -685,7 +685,6 @@ sq-bck3 {
 		position: relative;
 		align-items:center;
 		margin-top: -200px;
-		padding-right: 5%;
 	}
 	.accomptop h2 {
 		font-size: 1.5em;
