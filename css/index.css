@@ -602,6 +602,7 @@ sq-bck3 {
 		background-color: #00000038;
 		display: block;
 		position: sticky;
+		position: -webkit-sticky;
 		height: 100vh;
 		top: 0;
 		bottom: 0;
