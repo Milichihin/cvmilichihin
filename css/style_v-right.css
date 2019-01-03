@@ -290,6 +290,10 @@ h2 {
 	#issues li p {
 		font-size: 1.2em;
 	}
+	#issues .logo-job img {
+		width: 60px;
+		height: 60px;
+	}
 }
 
 @media (min-height: 1000px) and (max-width: 900px)  {
@@ -341,6 +345,8 @@ h2 {
 	#issues .logo-job img {
 		position: absolute;
 		bottom: 0;
+		width: 60px;
+		height: 60px;
 	}
 	#timeline #next {
 		background-image: none;
