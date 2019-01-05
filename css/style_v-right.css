@@ -178,8 +178,8 @@ h2 {
 /* ========= HORIZONTAL CONDITION ============ */
 
 @media (max-width: 1020px) {
+	
 	#timeline {
-		/*height: 500px;*/
 		height: 75vh;
 		top: -200px;
 	}
@@ -190,17 +190,12 @@ h2 {
 	#dates li {
 		text-align: left;
 		justify-content: left;
-	}
-	#issues {
-		/*width: 80%;*/
-		/*height: 600px;*/
-		/*overflow: hidden;*/
-		/*float: left;*/
+		font-size: 0.8em;
+		
 	}
 	#issues li {
 		height: 450px;
-		/*grid-template-columns: 1fr;*/
-    	/*grid-template-rows: 3fr 0.5fr;*/
+		/*width: 90%;*/
 		align-content: center;
 		padding-left: 10%;
 	}
@@ -215,10 +210,10 @@ h2 {
 	#issues li h1 {
 		color: black;
 		font-size: 1em;
-		text-align: left;
+		text-align: center;
 	}
 	#issues li h2 {
-		text-align: left;
+		text-align: center;
 		font-weight: normal;
 		color: black;
 	}
@@ -257,10 +252,12 @@ h2 {
 
 }
 
+
+
 /* ========= VERTICAL CONDITION ============ */ 
 
-/*and (min-width: 1020px) */
-@media (min-height: 1000px) {
+
+@media (min-height: 1000px), (max-width: 1020px) {
 	#issues li {
 		display: flex;
 		flex-direction: column;
@@ -270,12 +267,17 @@ h2 {
 		top: 60%;
 		width: 120px;
 		height: 120px;
-		margin-top: 40px;
+		margin-top: 60px;
 	}
 	#next, #prev {
 		left: 85%;
 		height: 320px;
+		background-image: none;
 	}
+	#dates li {
+		width: 70px;
+	}
+	
 }
 
 @media (min-height: 1000px) and (min-width: 1020px) {
@@ -291,25 +293,35 @@ h2 {
 		font-size: 1.2em;
 	}
 	#issues .logo-job img {
-		width: 60px;
-		height: 60px;
+		width: 120px;
+		height: 120px;
 	}
 }
 
-@media (min-height: 1000px) and (max-width: 900px)  {
-	#dates {
-		width: 100px;
-	}
+@media (min-height: 1000px), (max-width: 900px)  {
 	#timeline {
 		width: 95%;
 	}
+	#dates {
+		width: 100px;
+	}
+	#issues {
+		width: 70%;
+	}
 	#next, #prev {
 		background-image: none;
+	}	
+	#issues li h1 {
+		text-align: center;
 	}
+	#issues li h2 {
+		text-align: center;
+	}
+	
 }
 
 
-@media (max-height: 500px) {
+@media (max-height: 500px)  {
 	#timeline {
 		width: 95%;
 		height: 300px;
@@ -348,16 +360,89 @@ h2 {
 		width: 60px;
 		height: 60px;
 	}
-	#timeline #next {
-		background-image: none;
-	}
-	#timeline #prev {
-		background-image: none;
-	}
 }
 
 @media (max-height: 350px) {
 	#timeline {
 		top: -55vh;
 	}
+}
+
+@media (min-width: 1020px) and (max-height: 690px) and (min-height: 420px) {
+	#issues .logo-job img {
+		width: 60px;
+		height: 60px;
+		position: unset;
+	}
+}
+
+/*============ tight screen vertical MOBILE ========*/
+
+@media (max-width: 550px) {
+	#timeline {
+		background: none;
+		height: 70vh;
+	}
+	#dates {
+		display: none;
+	}
+	
+	#issues {
+		width: 100%;
+	}
+	#issues li {
+		justify-content: center;
+	}
+	#issues li p {
+		font-size: 0.9em;
+		line-height: 1.6;
+	}
+	#issues li h1 {
+		margin-top: 10vh;
+	}
+	#issues .logo-job img {
+		top: auto;
+		height: 60px;
+		width: 60px;
+	}
+	#next {
+		background-image: url('../img/next_v.png');
+		position: absolute;
+		left: 50%;
+		bottom: -300px;
+		transform: translateX(-50%);
+	}
+	#prev {
+		background-image: url('../img/prev_v.png');
+		position: absolute;
+		left: 50%;
+		top: 0;
+		transform: translateX(-50%);
+		height: 100px;
+	}
+}
+
+@media (max-width: 550px) and (max-height: 750px) {
+	#timeline {
+		height: 80vh;
+	}
+}
+
+@media (max-width: 550px) and (max-height: 670px) {
+	#timeline {
+		height: 85vh;
+	}
+}
+
+@media (max-width: 550px) and (max-height: 600px) {
+	#timeline {
+		margin-top: -20vh;
+	}
+	#issues li p {
+		font-size: 0.8em;
+	}
+	#issues .logo-job img {
+		bottom: 8%;
+	}
+	
 }
