@@ -901,9 +901,9 @@ sq-bck3 {
 		position: relative;
 		justify-content: center;
 		left: -550px;
-		transition: .5s ease-out;
-		-webkit-transition: .5s all ease-out;
-		-moz-transition: .5s ease-out;
+		transition: .3s ease-out;
+		-webkit-transition: .3s all ease-out;
+		-moz-transition: .3s ease-out;
 	}
 	.destop-cover{
 		display: none;
