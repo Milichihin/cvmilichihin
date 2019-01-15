@@ -527,6 +527,10 @@ p {
 	left: 59%;
 }
 
+.mba p, .human p {
+	color: transparent;
+}
+
 
 .accompbord {
 	height: 100%;
@@ -580,6 +584,8 @@ p {
 }
 .soc-logos {
 	display: flex;
+	width: 50%;
+	justify-content: space-evenly;
 	align-items: center;
 }
 .phone {
@@ -593,7 +599,7 @@ p {
 	z-index: 1;
 }
 
-.ln, .fb, .gm, .phone{
+.ln, .fb, .gm, .git, .wars, .phone{
 	height: 95px;
 	width: 95px;
 	display: flex;
@@ -786,16 +792,16 @@ sq-bck3 {
 	.contact {
 		margin-top: -5px;
 	}
-	.ln, .fb {
-		height: 70px;
-		width: 70px;
+	.ln, .fb, .git, .wars {
+		height: 50px;
+		width: 50px;
 	}
 	.contact img {
-    	height: 55px
+    	height: 40px
 	}
 	.gm {
-	    height: 60px;
-	    width: 80px;
+	    height: 50px;
+	    width: 70px;
 	}
 	.contact-container{
 		padding: 0 5% 0 0;
@@ -896,8 +902,8 @@ sq-bck3 {
 		justify-content: center;
 		left: -550px;
 		transition: .5s ease-out;
-		-webkit-transition: .3s all ease-out;
-		-moz-transition: .3s ease-out;
+		-webkit-transition: .5s all ease-out;
+		-moz-transition: .5s ease-out;
 	}
 	.destop-cover{
 		display: none;
@@ -991,11 +997,12 @@ sq-bck3 {
 	.soc-logos {
 		flex-direction: column;
 		margin: -20vh -10% 0 0;
+		width: auto;
 	}
 	.soc-logos a {
 		margin: 20px;
 	}
-	.ln, .fb {
+	.ln, .fb, .git, .wars {
 		height: 60px;
 		width: 60px;
 	}
@@ -1005,6 +1012,9 @@ sq-bck3 {
 	.gm {
 	    height: 50px;
 	    width: 65px;
+	}
+	sq-bck3 {
+		display: none;
 	}
 }
 
@@ -1028,3 +1038,49 @@ sq-bck3 {
 	}
 }
 
+@media (max-width: 700px) and (max-height: 670px) {
+	.ln, .fb, .git, .wars {
+		height: 40px;
+		width: 40px;
+	}
+	.contact img {
+    	height: 30px
+	}
+	.gm {
+	    height: 40px;
+	    width: 50px;
+	}
+	.soc-logos {
+		width: 80%;
+	}
+}
+
+@media (max-width: 640px) and (max-height: 400px) {
+	.ln, .fb, .git, .wars {
+		margin: 0 20px 0 0;
+	}
+	.contact h4 {
+		font-size: 1.5em;
+	}
+	sq-bck3 {
+	    height: 30px;
+	    width: 200px;
+	}
+}
+
+@media (min-width: 700px) and (min-height: 420px) {
+	.ln, .fb, .git, .wars {
+		height: 60px;
+		width: 60px;
+	}
+	.contact img {
+    	height: 40px
+	}
+	.gm {
+	    height: 60px;
+	    width: 70px;
+	}
+	.soc-logos {
+		margin: 0;
+	}
+}
